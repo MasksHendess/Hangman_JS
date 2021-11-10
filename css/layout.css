@@ -1,0 +1,94 @@
+@charset "UTF-8";
+/* ----- Grundstil för webbsidan ----- */
+
+html, body, nav, header, main, aside, footer, article, section, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+	height: 100%;
+	user-select: none;
+}
+
+body {
+	height: 100%; 
+	background-color: lightblue;
+    color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+	display: grid;
+	grid-template-columns: auto minmax(100px,900px) auto;
+	grid-template-rows: min-content auto min-content;
+	grid-template-areas:
+		" header  header  header"
+		".	    main	."
+		"footer	footer	footer";
+}
+
+header {
+    background-color: white;
+	text-align: center;
+	grid-area: header;
+	border-bottom: 1px solid black;
+	box-shadow: 5px 5px 10px #999, -5px 5px 10px #999;
+	margin-bottom: 10px;
+}
+header h1, header h2, header h3 {
+	margin: 0;
+	padding: 10px;
+}
+
+main {
+	grid-area: main;
+	padding: 10px;
+}
+
+footer {
+	grid-area: footer;
+	background-color: white;
+	border-top: 1px solid black;
+	box-shadow: 0px -5px 10px #999;
+	padding: 4px;
+	font-size: 0.8em;
+	text-align: center;
+}
+
+hr {
+	clear:both;
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	color: #000;
+}
+a:hover, a:active {
+	background-color: #FC6;
+}
+
+button {
+	background-color: #FEC;
+	border-radius: 10px;
+	font-size: 1em;
+	cursor: pointer;
+}
+button:hover {
+	background-color: #FC6;
+}
+
+.alignLeft {
+	float: left;
+}
+.alignRight {
+	float: right;
+}
+
+@media screen and (max-width:400px) {
+	header h1, header h2, header h3 {
+		font-size: 1em;
+	}
+}

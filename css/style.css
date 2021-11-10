@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+#startGameBtn {
+	background-color: #6F9;
+	font-size: 1.5em;
+}
+
+#board {
+	border-top: 1px solid #666;
+	border-bottom: 1px solid #666;
+	padding: 10px 0 0 0;
+}
+
+#letterButtons {
+	width: 54em;
+	max-width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+#letterButtons button {
+	flex: 0 0 3em;
+	height: 2em;
+	font-size: 1.5em;
+	margin: 4px;
+}
+
+#letterBoxes {
+	clear: both;
+	padding-top: 20px;
+}
+#letterBoxes span {
+	display: inline-block;
+	background-color: #FFF;
+	border: 1px solid #666;
+	margin: 4px;
+	width: 2em;
+	line-height: 2em;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+#hangman {
+	display: block;
+}
+
+#message {
+	padding-top: 20px;
+	font-size: 1.2em;
+}
